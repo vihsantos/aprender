@@ -15,6 +15,7 @@ main{
 .bloco{
     width: 80%;
     height: 90vh;
+    background-color: cadetblue;
 }
 .menu{
     display: flex;
@@ -34,13 +35,15 @@ main{
     font-size: 20px;
     text-decoration: none;
 }
+.menu ul li a:hover{
+    color: #ffd000;
+}
 .header{
     margin-top: 16px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: cadetblue;
 }
 .paragrafo {
     margin: 16px;
@@ -48,14 +51,59 @@ main{
 }
 .circle {
     margin: 16px;
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     border-radius: 50%;
     background-color: #FFFFFF;
     box-shadow: 10px 5px 20px rgba(92, 92, 92, 0.315);
 }
 .circle img {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     border-radius: 50%;
+}
+footer{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.insta{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.insta img{
+    width: 20px;
+    height: 20px;
+}
+.insta a{
+    color: #121b1a;
+    text-decoration: none;
+}
+.insta a h2{
+    margin: 16px;
+    font-size: 15px;
+    
+}
+.twitter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.twitter img{
+    width: 20px;
+    height: 20px;
+}
+.twitter a{
+    color: #121b1a;
+    text-decoration: none;
+}
+.twitter a h2{
+    margin: 16px;
+    font-size: 15px;
+    
 }
