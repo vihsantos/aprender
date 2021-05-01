@@ -15,7 +15,6 @@ main{
 .bloco{
     width: 80%;
     height: 90vh;
-    background-color: cadetblue;
 }
 .menu{
     display: flex;
@@ -83,6 +82,9 @@ footer{
     color: #121b1a;
     text-decoration: none;
 }
+.insta a :hover{
+    color: #ffd000;
+}
 .insta a h2{
     margin: 16px;
     font-size: 15px;
@@ -101,6 +103,9 @@ footer{
 .twitter a{
     color: #121b1a;
     text-decoration: none;
+}
+.twitter a:hover{
+    color: #ffd000;
 }
 .twitter a h2{
     margin: 16px;
