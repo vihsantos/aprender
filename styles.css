@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,900;1,100&display=swap');
+
+:root{
+    --verde-coral:#AAF3DD;
+    --branco:#FFFFFF;
+    --amarelo-hover: #ffd000;
+    --space: 16px;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -7,7 +15,7 @@
 }
 main{
     min-height: 100vh;
-    background-image: linear-gradient(to bottom right, #AAF3DD, #FFFFFF);
+    background-image: linear-gradient(var(--verde-coral), var(--branco) );
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,10 +31,10 @@ main{
     align-items: center;
 }
 .menu img{
-    margin-left: 16px;
+    margin-left: var(--space);
 }
 .menu ul li{
-    margin: 16px;
+    margin: var(--space);
     display: inline;
 }
 .menu ul li a{
@@ -35,25 +43,25 @@ main{
     text-decoration: none;
 }
 .menu ul li a:hover{
-    color: #ffd000;
+    color: var(--amarelo-hover);
 }
 .header{
-    margin-top: 16px;
+    margin-top: var(--space);
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
 .paragrafo {
-    margin: 16px;
+    margin: var(--space);
     width: 600px;
 }
 .circle {
-    margin: 16px;
+    margin: var(--space);
     width: 400px;
     height: 400px;
     border-radius: 50%;
-    background-color: #FFFFFF;
+    background-color:var(--branco);
     box-shadow: 10px 5px 20px rgba(92, 92, 92, 0.315);
 }
 .circle img {
@@ -62,7 +70,7 @@ main{
     border-radius: 50%;
 }
 footer{
-    padding-top: 50px;
+    padding-top: 30px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -83,10 +91,10 @@ footer{
     text-decoration: none;
 }
 .insta a :hover{
-    color: #ffd000;
+    color: var(--amarelo-hover);
 }
 .insta a h2{
-    margin: 16px;
+    margin: var(--space);
     font-size: 15px;
     
 }
@@ -108,7 +116,7 @@ footer{
     color: #ffd000;
 }
 .twitter a h2{
-    margin: 16px;
+    margin: var(--space);
     font-size: 15px;
     
 }
