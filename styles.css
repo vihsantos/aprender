@@ -1,122 +1,144 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,900;1,100&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 :root{
-    --verde-coral:#AAF3DD;
-    --branco:#FFFFFF;
-    --amarelo-hover: #ffd000;
-    --space: 16px;
+    --azul: #0170D9;
+    --azul-medio: #6EA6E1;
+    --azul-claro: #99BDE1;
+    --azul-mais-claro: #BFD3EB;
+
+    --verde: #447526;
+    --verde-medio: #739058;
+    --verde-claro: #84997A;
+    --verde-mais-claro: #A6C8C7;
+
+    --vermelho: #5A120D;
+    --vermelho-medio: #B73A37;
+    --vermelho-claro: #CE5855;
+    --vermelho-mais-claro: #F4C3C3;
+
+    --espaco: 12px;
+    --radius: 20px;
+
+    --sombras:20px 20px 60px #bebebe96,
+    -20px -20px 60px #ffffff96;
 }
 
 *{
+    background-color: var(--azul-mais-claro);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Bebas Neue', cursive;
 }
+
 main{
     min-height: 100vh;
-    background-image: linear-gradient(var(--verde-coral), var(--branco) );
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
-.bloco{
-    width: 80%;
-    height: 90vh;
-}
-.menu{
+.MENU{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 90%;
+    height: 100px;
+    background-color: var(--azul-mais-claro);
+    border-radius: var(--radius);
+    box-shadow: var(--sombras);
 }
-.menu img{
-    margin-left: var(--space);
+
+.MENU img {
+margin: var(--espaco);
 }
-.menu ul li{
-    margin: var(--space);
+
+.MENU ul li {
     display: inline;
+    margin: var(--espaco);
+
 }
-.menu ul li a{
-    color: #121b1a;
+.MENU ul li a {
     font-size: 20px;
     text-decoration: none;
+    color: var(--vermelho);
+    font-weight: bold;
 }
-.menu ul li a:hover{
-    color: var(--amarelo-hover);
-}
-.header{
-    margin-top: var(--space);
+
+.CONTAINER{
+    margin: var(--espaco);
+    width: 260px;
+    height: 520px;
+    background-color: var(--azul-mais-claro);
+    border-radius: var(--radius);
+    box-shadow: var(--sombras);
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-.paragrafo {
-    margin: var(--space);
-    width: 600px;
-}
-.circle {
-    margin: var(--space);
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
-    background-color:var(--branco);
-    box-shadow: 10px 5px 20px rgba(92, 92, 92, 0.315);
-}
-.circle img {
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
-}
-footer{
-    padding-top: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
-.insta{
+
+h2{
+    margin-top: var(--espaco);
+    color: var(--vermelho);
+}
+
+.INFOS{
+    margin-top: var(--espaco);
+    width: 236px;
+    height: 100px;
+    border-radius: var(--radius);
+    background-color: var(--vermelho-mais-claro);
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: center;
 }
-.insta img{
-    width: 25px;
-    height: 25px;
+
+p{ 
+    color: var(--vermelho-medio);
+    height: 80px;
+    width: 140px;
+    background: none;
 }
-.insta a{
-    color: #121b1a;
-    text-decoration: none;
+
+.ICONE{
+    margin: var(--espaco);
+    width: 50px;
+    height: 50px;
+    border-radius: var(--radius);
+    background-color: var(--verde-mais-claro);
 }
-.insta a :hover{
-    color: var(--amarelo-hover);
-}
-.insta a h2{
-    margin: var(--space);
-    font-size: 15px;
-    
-}
-.twitter{
+
+
+.COMPONENTES{
+    margin: var(--espaco);
+    width: 880px;
+    height: 520px;
+    background-color: var(--azul-mais-claro);
+    border-radius: var(--radius);
+    box-shadow: var(--sombras);
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
 }
-.twitter img{
-    width: 20px;
-    height: 20px;
+
+.CAPA{
+    margin: var(--espaco);
+    width: 850px;
+    height: 200px;
+    background-color: var(--azul-medio);
+    border-radius: var(--radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.twitter a{
-    color: #121b1a;
-    text-decoration: none;
+.CAPA h1{
+    background: none;
 }
-.twitter a:hover{
-    color: #ffd000;
+
+.CARDS{
+    margin: var(--espaco);
+    width: 260px;
+    height: 260px;
+    background-color: var(--azul-medio);
+    border-radius: var(--radius);
 }
-.twitter a h2{
-    margin: var(--space);
-    font-size: 15px;
-    
-}
+
