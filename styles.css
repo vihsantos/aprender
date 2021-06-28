@@ -38,6 +38,7 @@ main{
     justify-content: center;
 }
 .MENU{
+    margin-top: var(--espaco);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -92,7 +93,9 @@ h2{
     align-items: center;
 }
 
-p{ 
+p{  
+    text-align: start;
+    font-family: 'Times New Roman', Times, serif;
     color: var(--vermelho-medio);
     height: 80px;
     width: 140px;
@@ -100,7 +103,8 @@ p{
 }
 
 .ICONE{
-    margin: var(--espaco);
+    margin-left: var(--espaco);
+    margin-right: var(--espaco);
     width: 50px;
     height: 50px;
     border-radius: var(--radius);
