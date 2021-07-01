@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Benne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Benne&family=Lato:wght@900&display=swap');
 :root{
     --azul: #0170D9;
     --azul-medio: #6EA6E1;
@@ -18,8 +20,8 @@
     --espaco: 12px;
     --radius: 20px;
 
-    --sombras:20px 20px 60px #bebebe96,
-    -20px -20px 60px #ffffff96;
+    --sombras:10px 10px 30px #bebebece,
+    -10px -10px 30px #ffffffc4;
 }
 
 *{
@@ -142,7 +144,31 @@ p{
     margin: var(--espaco);
     width: 260px;
     height: 260px;
-    background-color: var(--azul-medio);
+    background-color: var(--verde-medio);
     border-radius: var(--radius);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+.CARDS h4{
+    font-family: 'Benne', serif;
+    background: none;
+    text-align: center;
+    margin-top: 12px;
+}
+.CARDS h5{
+    font-size: 12px;
+    font-family: 'Lato', sans-serif;
+    margin-left: var(--espaco);
+    color: #1F1503;
+    background: none;
+}
+.imagem-container{
+    margin: var(--espaco);
+    height: 150px;
+    width: 150px;
+}
+
+
 
