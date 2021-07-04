@@ -144,7 +144,7 @@ p{
     margin: var(--espaco);
     width: 260px;
     height: 260px;
-    background-color: var(--verde-medio);
+    background-color: var(--azul-claro);
     border-radius: var(--radius);
     display: flex;
     flex-direction: column;
@@ -164,11 +164,15 @@ p{
     color: #1F1503;
     background: none;
 }
-.imagem-container{
+.imagem-container {
     margin: var(--espaco);
     height: 150px;
     width: 150px;
 }
-
+.imagem-container img{
+    border-radius: var(--radius);
+    height: 150px;
+    width: 150px;
+}
 
 
